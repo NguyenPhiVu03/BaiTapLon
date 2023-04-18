@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    width: 1519.2px;
+    height: auto;
+}
+
+#header {
+    width: 100%;
+    height: 66px;
+    position: fixed;
+    background-color: transparent;
+}
+
+.logo-brand {
+    height: 66px;
+    padding-left: 50px;
+}
+
+.logo-link .logo {
+    margin: 5px 0;
+}
+
+.nav-menu {
+    height: 66px;
+    padding-left: 0;
+}
+
+.nav-menu #nav {
+    padding: 0;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    background-color: transparent;
+}
+
+.bgcolor.scrolled {
+    background-color: #fff;
+}
+
+#nav ul {
+    display: flex;
+    line-height: 66px;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+#nav ul li {
+    list-style-type: none;
+    margin-right: 1.25em;
+    position: relative;
+}
+
+#nav ul li a {
+    color: #272727;
+    text-decoration: none;
+    font-family: 'Oswald' !important;
+    font-size: 0.6975em;
+    padding-left: 0.5em;
+    padding-right: 0.5em
+}
+
+.tools {
+    height: 66px;
+    align-items: center;
+    line-height: 66px;
+    font-family: 'Oswald' !important;
+    padding-right: 50px;
+}
+
+.tools .account-links {
+    padding-right: 20px;
+}
+
+.search-and-cart .search {
+    padding-right: 20px;
+}
+
+.tools span a {
+    color: #272727;
+    font-size: 0.6875em;
+}
+
+.tools span a:hover {
+    text-decoration: none;
+}
+
+.tools .hd-select-l {
+    margin-left: 16.8px;
+    line-height: 17.8px;
+}
+
+.hd-select-l select {
+    background-color: #191919;
+    color: #fff;
+    font-family: 'Oswald' !important;
+    width: 35.8px;
+    height: 18.8px;
+    border-radius: 2px;
+}
+
+.hd-select-l option {
+    font-size: 0.6875em;
+}
