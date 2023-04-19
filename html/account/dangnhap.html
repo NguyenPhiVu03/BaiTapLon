@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hades</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/jquery-3.6.4.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../css/hades.css">
+    <title>Tai khoan</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/account/dangnhap.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <script src="../js/hades.js"></script>
+    <script type="text/javascript">
+        function showRecoverPasswordForm() {
+            document.getElementById('recover-password').style.display = 'block';
+            document.getElementById('login').style.display = 'none';
+        }
+        if (window.location.hash == '#recover') {
+            showRecoverPasswordForm()
+        }
+    </script>
 </head>
 
 <body>
     <div id="container">
-        <nav id="header" class="header">
-            <div class="row">
+        <div id="header">
+            <div class="menu">
                 <div class="logo-brand col-md-2">
                     <a class="logo-link" href="http://127.0.0.1:5500/html/hades.html">
                         <h1 class="logo">
-                            <img src="../img/logo.webp" alt="hades logo" height="50px">
+                            <img src="/img/logo.webp" alt="hades logo" height="50px">
                         </h1>
                     </a>
                 </div>
@@ -29,7 +37,7 @@
                 <div class="nav-menu col-md-7">
                     <div id="nav">
                         <ul class="clearfix bgcolor">
-                            <li><a href="collections/shopall.html" title="SHOP ALL"> SHOP ALL</a></li>
+                            <li><a href="shopall.html" title="SHOP ALL"> SHOP ALL</a></li>
                             <li><a href="#" title="TOPS"> TOPS</a></li>
                             <li><a href="#" title="BOTTOMS"> BOTTOMS</a></li>
                             <li><a href="#" title="OUTERWEAR"> OUTERWEAR</a></li>
@@ -44,7 +52,7 @@
 
                 <div class="tools col-md-3">
                     <span class="account-links">
-                        <a href="/html/account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
+                        <a href="#" id="customer_login_link">ĐĂNG NHẬP</a> /
                         <a href="#" id="customer_register_link">ĐĂNG KÝ</a>
                     </span>
                     <span class="search-and-cart action--search">
@@ -66,109 +74,106 @@
                     </span>
                 </div>
             </div>
-        </nav>
+        </div>
 
         <div id="content">
-            <section class="section section-slider">
-                <div id="home-slider">
-                    <div class="slider-owl owl-carousel owl-theme owl-loaded">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage">
-                                <div class="owl-item active" style="width: 100%; margin-right: 0px;">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="../img/slider1.webp" alt="">
-                                        </a>
+            <div class="layout-account">
+                <div class="row">
+                    <div>
+                        <h2 class="title lang" keylanguage="dang_nhap">Đăng nhập</h2>
+                    </div>
+                    <div class="customer-login">
+                        <div id="login">
+                            <div class="accounttype">
+                                <h2 class="title"></h2>
+                            </div>
+                            <form accept-charset="UTF-8" action="/html/account/dangnhap.html" method="post" id="customer_login">
+                                <input name="form_type" type="hidden" value="customer_login">
+                                <input name="utf8" type="hidden" value="✓">
+                                <div class="clearfix large_form">
+                                    <p class="label">Email <span style="color: red;">*</span></p>
+                                    <label for="customer_email" class="icon-field"><i class="icon-login icon-envelope "></i></label>
+                                    <input required="" type="email" value="" name="customer[email]" id="customer_email" class="text">
+                                </div>
+                                <div class="clearfix large_form">
+                                    <p class="label">Password <span style="color: red;">*</span></p>
+                                    <label for="customer_email" class="icon-field"><i class="icon-login icon-envelope "></i></label>
+                                    <input required="" type="password" value="" name="customer[password]" id="customer_password" class="text">
+                                </div>
+                                <div class="clearfix action_account_customer">
+                                    <div class="action_bottom">
+                                        <input role="button" type="submit" class="btn btn-signin" value="Đăng Nhập">
+                                    </div>
+                                    <div class="req_pass">
+                                        <a class="lang" href="#" onclick="showRecoverPasswordForm();return false;">Quên mật khẩu?</a>
+                                        <br>
+                                        <span class="lang">hoặc</span>
+                                        <a href="/html/account/dangky.html" class="lang" title="Đăng ký">Đăng ký</a>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                        <!-- <div class="owl-nav">
-                            <div class="owl-prev">prev</div>
-                            <div class="owl-next">next</div>
-                        </div>
-                        <div class="owl-dots" style="display: none;"></div> -->
                     </div>
-                </div>
-            </section>
-
-            <div class="slider2">
-                <div class="tops">
-                    <a href="#">
-                        <img src="../img/tops.webp" alt="top" width="496.05px">
-                    </a>
-                </div>
-
-                <div class="bottoms">
-                    <a href="#">
-                        <img src="../img/bottoms.webp" alt="bottoms" width="496.05px">
-                    </a>
-                </div>
-
-                <div class="outerwears">
-                    <a href="#">
-                        <img src="../img/outerwears.webp" alt="outerwears" width="496.05px">
-                    </a>
                 </div>
             </div>
+        </div>
 
-            <div>
-                <div class="wrapper-heading-home wrapper-heading-home-instagram">
-                    <div class="wrapper-animation2">
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+        <div class="slider1">
+            <div class="wrapper-heading-home wrapper-heading-home-instagram">
+                <div class="wrapper-animation2">
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
 
-                        <span class="text-animation-2">
-                            <h2>
-                                <span>streetwear brand limited</span>
-                        </h2>
-                        </span>
-                    </div>
+                    <span class="text-animation-2">
+                        <h2>
+                            <span>streetwear brand limited</span>
+                    </h2>
+                    </span>
                 </div>
             </div>
         </div>
@@ -244,14 +249,14 @@
                                     </h4>
                                     <div class="footer-content">
                                         <a href="https://www.facebook.com/hadesvietnam/">
-                                            <img src="../img/facebook_logo.png" alt="link_facebook" width="26px" height="26px">
+                                            <img src="/img/facebook_logo.png" alt="link_facebook" width="26px" height="26px">
                                         </a>
                                         <a href="https://www.instagram.com/hades.studio/">
-                                            <img src="../img/../img/instagram_logo.png" alt="link_instagram" width="26px" height="27px">
+                                            <img src="/img/instagram_logo.png" alt="link_instagram" width="26px" height="27px">
                                         </a>
                                         <br>
                                         <a href="http://online.gov.vn/Home/WebDetails/78935">
-                                            <img src="../img/bocongthuong_logo.webp" alt="bocongthuong_logo" width="150px" style="margin-top: 10px; margin-left: -5px;">
+                                            <img src="/img/bocongthuong_logo.webp" alt="bocongthuong_logo" width="150px" style="margin-top: 10px; margin-left: -5px;">
                                         </a>
                                     </div>
                                 </div>
@@ -261,6 +266,7 @@
                 </div>
             </div>
         </footer>
+
         <div class="swiper-container-noti swiper-fix">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-noti">
