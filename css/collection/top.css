@@ -82,37 +82,6 @@ a:hover {
     background: url("/img/top5.webp") no-repeat center;
     background-size: cover;
 }
-.section-products #product-6 .part-1::before {
-    background: url("/img/butom1.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-7 .part-1::before {
-    background: url("/img/butom2.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-8 .part-1::before {
-    background: url("/img/butom3.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-9 .part-1::before {
-    background: url("/img/outer1.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-10 .part-1::before {
-    background: url("/img/outer2.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-11 .part-1::before {
-    background: url("/img/outer3.webp") no-repeat center;
-    background-size: cover;
-}
-.section-products #product-12 .part-1::before {
-    background: url("/img/foot1.webp") no-repeat center;
-    background-size: cover;
-}.section-products #product-13 .part-1::before {
-    background: url("/img/foot2.webp") no-repeat center;
-    background-size: cover;
-}
 
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
