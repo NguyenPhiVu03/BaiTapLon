@@ -11,11 +11,23 @@
     <script src="/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/pages/chinhsach.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll < 66) {
+                    $(".menu").css("background-color", "transparent");
+                } else {
+                    $(".menu").css("background-color", "#fff");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
     <div id="container">
-        <div id="header">
+        <div id="header" class="header">
             <div class="menu">
                 <div class="logo-brand col-md-2">
                     <a class="logo-link" href="http://127.0.0.1:5500/html/hades.html">

@@ -359,6 +359,7 @@ body {
     font-family: sans-serif;
 }
 
-.content {
+#content {
     font-family: sans-serif;
+    z-index: -1;
 }
