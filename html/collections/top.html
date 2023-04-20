@@ -5,40 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tai khoan</title>
+    <title>TOPS</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="/js/jquery-3.6.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/account/dangki.css">
+    <link rel="stylesheet" href="/css/hades.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript">
-        function showRecoverPasswordForm() {
-            document.getElementById('recover-password').style.display = 'block';
-            document.getElementById('login').style.display = 'none';
-        }
-        if (window.location.hash == '#recover') {
-            showRecoverPasswordForm()
-        }
-    </script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                if (scroll < 66) {
-                    $(".menu").css("background-color", "transparent");
-                } else {
-                    $(".menu").css("background-color", "#fff");
-                }
-            })
-        })
-    </script>
+    <script src="/js/hades.js"></script>
 </head>
 
 <body>
     <div id="container">
-        <div id="header">
-            <div class="menu">
+        <nav id="header" class="header">
+            <div class="row">
                 <div class="logo-brand col-md-2">
                     <a class="logo-link" href="http://127.0.0.1:5500/html/hades.html">
                         <h1 class="logo">
@@ -50,27 +29,23 @@
                 <div class="nav-menu col-md-7">
                     <div id="nav">
                         <ul class="clearfix bgcolor">
-                            <li><a href="/html/collections/shopall.html" title="SHOP ALL"> SHOP ALL</a></li>
-                            <li><a href="/html/collections/top.html" title="TOPS"> TOPS</a></li>
-                            <li><a href="/html/collections/buttom.html" title="BOTTOMS"> BOTTOMS</a></li>
-                            <li><a href="/html/collections/outerwear.html" title="OUTERWEAR"> OUTERWEAR</a></li>
-                            <li><a href="/html/collections/footwear.html" title="FOOTWEAR"> FOOTWEAR</a></li>
+                            <li><a href="../collections/shopall.html" title="SHOP ALL"> SHOP ALL</a></li>
+                            <li><a href="../collections/top.html" title="TOPS"> TOPS</a></li>
+                            <li><a href="../collections/buttom.html" title="BOTTOMS"> BOTTOMS</a></li>
+                            <li><a href="../collections/outerwear.html" title="OUTERWEAR"> OUTERWEAR</a></li>
+                            <li><a href="../collections/footwear.html" title="FOOTWEAR"> FOOTWEAR</a></li>
+                            
                         </ul>
                     </div>
                 </div>
 
                 <div class="tools col-md-3">
                     <span class="account-links">
-<<<<<<< HEAD
-                        <a href="/html/account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
-                        <a href="/html/account/dangky.html" id="customer_register_link">ĐĂNG KÝ</a>
-=======
                         <a href="../account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
-                        <a href="../account/dangky.html" id="customer_register_link">ĐĂNG KÝ</a>
->>>>>>> 52d80dff022fed93a04fbe04a6417e0ed8b23b11
+                        <a href="../account/dangki.html" id="customer_register_link">ĐĂNG KÝ</a>
                     </span>
                     <span class="search-and-cart action--search">
-                        <a href="/html/timkiem.html" class="search">TÌM KIẾM</a>
+                        <a href="../timkiem.html" class="search">TÌM KIẾM</a>
                         <span>
                             <span>
                                 <a href="#"><span>GIỎ HÀNG</span>
@@ -81,133 +56,98 @@
                     </span>
                     </span>
                     <span class="hd-select-l">
-                        <select id="select-language" style="height: 30px;">
+                        <select id="select-language">
                             <option value="en">EN</option>
                             <option value="vi" selected>VI</option>
                         </select>
                     </span>
                 </div>
             </div>
-        </div>
+        </nav>
 
         <div id="content">
-            <div class="layout-account">
-                <div class="row">
-                    <div>
-                        <h2 class="title lang" keylanguage="dang_ky">Đăng ký</h2>
-                    </div>
-                    <div class="customer-login">
-                        <div id="login">
-                            <div class="accounttype">
-                                <h2 class="title"></h2>
-                            </div>
-                            <div class="userbox">
-                                <form accept-charset="UTF-8" action="/html/account/dangky.html" id="create_customer" method="post">
-                                    <div id="last_name" class="clearfix large_form">
-                                        <label for="last_name" class="label"><i class="icon-login icon-user "></i></label>
-                                        <input required="" type="text" value="" name="customer[last_name]" placeholder="Họ" id="last_name" class="text" size="30">
-                                    </div>
-                                    <div id="first_name" class="clearfix large_form">
-                                        <label for="first_name" class="label"><i class="icon-login icon-user "></i></label>
-                                        <input required="" type="text" value="" name="customer[first_name]" placeholder="Tên" id="first_name" class="text" size="30">
-                                    </div>
-                                    <div id="gender" class="clearfix large_form">
-                                        <input id="radio1" type="radio" value="0" name="customer[gender]">
-                                        <label for="radio1">
-                                            <span class="lang">Nữ</span>
-                                        </label>
-                                        <input id="radio2" type="radio" value="1" name="customer[gender]">
-                                        <label for="radio2">
-                                            <span class="lang">Nam</span>
-                                        </label>
-                                    </div>
-                                    <div id="birthday" class="clearfix large_form">
-                                        <label for="birthday" class="label"><i class="icon-login icon-envelope "></i></label>
-                                        <input type="text" value="" name="customer[birthday]" id="birthday" class="text" size="30" placeholder="mm/dd/yyyy">
-                                    </div>
-                                    <div id="email" class="clearfix large_form">
-                                        <label for="email" class="label"><i class="icon-login icon-envelope "></i></label>
-                                        <input required="" type="email" value="" placeholder=" Email" name="customer[email]" id="email" class="text" size="30">
-                                    </div>
-                                    <div id="password" class="clearfix large_form">
-                                        <label for="password" class="label"><i class="icon-login icon-shield "></i></label>
-                                        <input required="" type="password" value="" placeholder=" Mật khẩu" name="customer[password]" id="password" class="password text" size="30">
-                                    </div>
-                                    <div class="clearfix action_account_custommer">
-                                        <div class="action_bottom">
-                                            <input class="btn" type="submit" value="Đăng ký">
-                                        </div>
-                                    </div>
-                                    <div class="clearfix req_pass">
-                                        <a href="../hades.html" class="return_back">
-                                            <i class="fa fa-long-arrow-left"></i>
-                                            <span class="lang">Quay lại trang chủ</span>
+            <section class="section section-slider">
+                <div id="home-slider">
+                    <div class="slider-owl owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item active" style="width: 100%; margin-right: 0px;">
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="../img/slider1.webp" alt="">
                                         </a>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
+                        <!-- <div class="owl-nav">
+                            <div class="owl-prev">prev</div>
+                            <div class="owl-next">next</div>
+                        </div>
+                        <div class="owl-dots" style="display: none;"></div> -->
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <div style="height: 500px;"></div>
+            
 
-        <div class="slider1">
-            <div class="wrapper-heading-home wrapper-heading-home-instagram">
-                <div class="wrapper-animation2">
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+            <div>
+                <div class="wrapper-heading-home wrapper-heading-home-instagram">
+                    <div class="wrapper-animation2">
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
 
-                    <span class="text-animation-2">
-                        <h2>
-                            <span>streetwear brand limited</span>
-                    </h2>
-                    </span>
+                        <span class="text-animation-2">
+                            <h2>
+                                <span>streetwear brand limited</span>
+                        </h2>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -286,7 +226,7 @@
                                             <img src="/img/facebook_logo.png" alt="link_facebook" width="26px" height="26px">
                                         </a>
                                         <a href="https://www.instagram.com/hades.studio/">
-                                            <img src="/img/instagram_logo.png" alt="link_instagram" width="26px" height="27px">
+                                            <img src="/img/../img/instagram_logo.png" alt="link_instagram" width="26px" height="27px">
                                         </a>
                                         <br>
                                         <a href="http://online.gov.vn/Home/WebDetails/78935">
@@ -300,7 +240,6 @@
                 </div>
             </div>
         </footer>
-
         <div class="swiper-container-noti swiper-fix">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-noti">
