@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 body {
     font-family: "Poppins", sans-serif;
     color: #444444;
+}
+
+.header {
+    z-index: 1;
+}
+
+#content {
+    z-index: -1;
 }
 
 a,
@@ -28,7 +35,7 @@ a:hover {
 .section-products .header h2 {
     font-size: 2.2rem;
     font-weight: 400;
-    color: #444444; 
+    color: #444444;
 }
 
 .section-products .single-product {
@@ -44,24 +51,24 @@ a:hover {
 }
 
 .section-products .single-product .part-1::before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		transition: all 0.3s;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
 }
 
 .section-products .single-product:hover .part-1::before {
-		transform: scale(1.2,1.2) rotate(5deg);
+    transform: scale(1.2, 1.2) rotate(5deg);
 }
 
 .section-products #product-1 .part-1::before {
     background: url("/img/top1.webp") no-repeat center;
     background-size: cover;
-		transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
@@ -78,6 +85,7 @@ a:hover {
     background: url("/img/top4.webp") no-repeat center;
     background-size: cover;
 }
+
 .section-products #product-5 .part-1::before {
     background: url("/img/top5.webp") no-repeat center;
     background-size: cover;
@@ -162,4 +170,12 @@ a:hover {
     height: 1px;
     background-color: #444444;
     transform: translateY(-50%);
+}
+
+.wrapper-heading-home {
+    z-index: -1;
+}
+
+.main-footer {
+    z-index: -1;
 }
