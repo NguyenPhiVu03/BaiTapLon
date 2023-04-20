@@ -11,6 +11,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/account/dangki.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript">
         function showRecoverPasswordForm() {
             document.getElementById('recover-password').style.display = 'block';
@@ -19,6 +20,18 @@
         if (window.location.hash == '#recover') {
             showRecoverPasswordForm()
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll < 66) {
+                    $(".menu").css("background-color", "transparent");
+                } else {
+                    $(".menu").css("background-color", "#fff");
+                }
+            })
+        })
     </script>
 </head>
 
@@ -52,8 +65,8 @@
 
                 <div class="tools col-md-3">
                     <span class="account-links">
-                        <a href="#" id="customer_login_link">ĐĂNG NHẬP</a> /
-                        <a href="#" id="customer_register_link">ĐĂNG KÝ</a>
+                        <a href="/html/account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
+                        <a href="/html/account/dangky.html" id="customer_register_link">ĐĂNG KÝ</a>
                     </span>
                     <span class="search-and-cart action--search">
                         <a href="#" class="search">TÌM KIẾM</a>
@@ -120,9 +133,15 @@
                                         <input required="" type="password" value="" placeholder="Mật khẩu" name="customer[password]" id="password" class="password text" size="30">
                                     </div>
                                     <div class="clearfix action_account_custommer">
-                                        <div class="action_bottom button dark">
+                                        <div class="action_bottom">
                                             <input class="btn" type="submit" value="Đăng ký">
                                         </div>
+                                    </div>
+                                    <div class="clearfix req_pass">
+                                        <a href="../hades.html" class="return_back">
+                                            <i class="fa fa-long-arrow-left"></i>
+                                            <span class="lang">Quay lại trang chủ</span>
+                                        </a>
                                     </div>
                                 </form>
                             </div>

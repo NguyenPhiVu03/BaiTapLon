@@ -20,6 +20,18 @@
             showRecoverPasswordForm()
         }
     </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll < 66) {
+                    $(".menu").css("background-color", "transparent");
+                } else {
+                    $(".menu").css("background-color", "#fff");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -52,8 +64,8 @@
 
                 <div class="tools col-md-3">
                     <span class="account-links">
-                        <a href="#" id="customer_login_link">ĐĂNG NHẬP</a> /
-                        <a href="#" id="customer_register_link">ĐĂNG KÝ</a>
+                        <a href="/html/account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
+                        <a href="/html/account/dangky.html" id="customer_register_link">ĐĂNG KÝ</a>
                     </span>
                     <span class="search-and-cart action--search">
                         <a href="#" class="search">TÌM KIẾM</a>

@@ -136,8 +136,9 @@ body {
     margin: 24px 0;
 }
 
-.content {
+#content {
     font-family: sans-serif;
+    z-index: -1;
 }
 
 .layout-account {
@@ -201,8 +202,10 @@ input[type=password] {
     font-weight: 500;
 }
 
-#login input[type=email]:focus {
-    background-color: #fff;
+#login input[type=email]:focus,
+input[type=password]:focus {
+    background: #fff;
+    border-color: #ededed;
     outline: none;
 }
 
@@ -280,6 +283,7 @@ input[type=password] {
     -webkit-text-fill-color: hsl(0deg 0% 100%);
     position: absolute;
     margin-top: 580px;
+    z-index: -1;
 }
 
 .wrapper-animation2 {
@@ -334,6 +338,7 @@ input[type=password] {
     margin-top: 800px;
     width: 1519.2px;
     height: 457.2px;
+    z-index: -1;
 }
 
 .main-footer--bottom {
