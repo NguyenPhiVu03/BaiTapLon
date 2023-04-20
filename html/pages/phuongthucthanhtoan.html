@@ -11,6 +11,18 @@
     <script src="/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/pages/phuongthucthanhtoan.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll < 66) {
+                    $(".menu").css("background-color", "transparent");
+                } else {
+                    $(".menu").css("background-color", "#fff");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>

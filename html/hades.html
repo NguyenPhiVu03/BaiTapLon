@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="../css/hades.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <script src="../js/hades.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll < 66) {
+                    $(".row").css("background", "transparent");
+                } else {
+                    $(".row").css("background", "#fff");
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>

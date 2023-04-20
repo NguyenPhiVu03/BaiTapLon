@@ -121,6 +121,7 @@ body {
     height: 500px;
     position: absolute;
     margin-top: 66px;
+    z-index: -1;
 }
 
 .row {
