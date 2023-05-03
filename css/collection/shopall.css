@@ -12,6 +12,20 @@ body {
     z-index: -1;
 }
 
+.nav-menu li .font:hover::after {
+    background-image: url(/img/effect_menu.webp) !important;
+    background-repeat: no-repeat;
+    background-size: 3.5em 2.5em;
+    content: "";
+    display: block;
+    height: 3.25em;
+    z-index: 999999;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    width: 4.125em;
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -66,68 +80,68 @@ a:hover {
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("/img/top1.webp") no-repeat center;
+    background: url("/img/Collections/top1.webp") no-repeat center;
     background-size: cover;
     transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-    background: url("/img/top2.webp") no-repeat center;
+    background: url("/img/Collections/top2.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-3 .part-1::before {
-    background: url("/img/top3.webp") no-repeat center;
+    background: url("/img/Collections/top3.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("/img/top4.webp") no-repeat center;
+    background: url("/img/Collections/top4.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-5 .part-1::before {
-    background: url("/img/top5.webp") no-repeat center;
+    background: url("/img/Collections/top5.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-6 .part-1::before {
-    background: url("/img/butom1.webp") no-repeat center;
+    background: url("/img/Collections/butom1.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-7 .part-1::before {
-    background: url("/img/butom2.webp") no-repeat center;
+    background: url("/img/Collections/butom2.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-8 .part-1::before {
-    background: url("/img/butom3.webp") no-repeat center;
+    background: url("/img/Collections/butom3.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-9 .part-1::before {
-    background: url("/img/outer1.webp") no-repeat center;
+    background: url("/img/Collections/outer1.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-10 .part-1::before {
-    background: url("/img/outer2.webp") no-repeat center;
+    background: url("/img/Collections/outer2.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-11 .part-1::before {
-    background: url("/img/outer3.webp") no-repeat center;
+    background: url("/img/Collections/outer3.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-12 .part-1::before {
-    background: url("/img/foot1.webp") no-repeat center;
+    background: url("/img/Collections/foot1.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-13 .part-1::before {
-    background: url("/img/foot2.webp") no-repeat center;
+    background: url("/img/Collections/foot2.webp") no-repeat center;
     background-size: cover;
 }
 

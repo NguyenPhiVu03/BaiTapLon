@@ -11,21 +11,74 @@
     <script src="/js/jquery-3.6.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script>
+        function off() {
+            document.getElementById("site-site-overlay").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
+    <div id="header">
+        <div class="menu">
+            <div class="logo-brand col-md-2">
+                <a class="logo-link" href="http://127.0.0.1:5500/html/hades.html">
+                    <h1 class="logo">
+                        <img src="/img/logo.webp" alt="hades logo" height="50px">
+                    </h1>
+                </a>
+            </div>
+
+            <div class="nav-menu col-md-7">
+                <div id="nav">
+                    <ul class="clearfix bgcolor">
+                        <li><a href="/html/collections/shopall.html"> SHOP ALL</a></li>
+                        <li><a href="/html/collections/top.html"> TOPS</a></li>
+                        <li><a href="/html/collections/bottom.html"> BOTTOMS</a></li>
+                        <li><a href="/html/collections/outerwear.html"> OUTERWEAR</a></li>
+                        <li><a href="/html/collections/footwear.html"> FOOTWEAR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tools col-md-3">
+                <span class="account-links">
+                    <a href="/html/account/dangnhap.html" id="customer_login_link">ĐĂNG NHẬP</a> /
+                    <a href="/html/account/dangky.html" id="customer_register_link">ĐĂNG KÝ</a>
+                </span>
+                <span class="search-and-cart action--search">
+                    <a href="../timkiem.html" class="search">TÌM KIẾM</a>
+                    <span>
+                        <span>
+                            <a href="#"><span>GIỎ HÀNG</span>
+                <span style="float:left"></span>
+                <span class="count-holder"><span class="count">(0)</span></span>
+                </a>
+                </span>
+                </span>
+                </span>
+                <span class="hd-select-l">
+                    <select id="select-language">
+                        <option value="en">EN</option>
+                        <option value="vi" selected>VI</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="site-overlay" class="site-overlay active" onclick="off()"></div>
     <div class="show-search">
-        <select id="select-language" style="height: 50px;">
-            <option value="eg">EN</option>
-            <option value="vi" selected>VI</option>
+        <select id="select-language">
+            <option value="eg ">EN</option>
+            <option value="vi " selected>VI</option>
         </select>
-        <div id="site-search">
-            <div class="site-nav-container">
-                <p class="title lang">Search</p>
-                <div class="search-box">
-                    <form action="../html/timkiem.html" class="searchform">
-                        <div class="search">
-                            <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off" class="searchinput" type="text" size="20" placeholder="Search in HADES...">
+        <div id="site-search ">
+            <div class="site-nav-container ">
+                <p class="title lang ">Search</p>
+                <div class="search-box ">
+                    <form action="../html/timkiem.html " class="searchform ">
+                        <div class="search ">
+                            <input required=" " id="inputSearchAuto " name="q " maxlength="40 " autocomplete="off " class="searchinput " type="text " size="20 " placeholder="Search in HADES... ">
                         </div>
                     </form>
                 </div>
@@ -37,6 +90,7 @@
                     </a>
                 </div>
             </div>
+<<<<<<< HEAD
             
             <button id="site-close" class="site-close is-active">
                 <div class="bar">
@@ -44,6 +98,8 @@
                 </div>
             </button>
             
+=======
+>>>>>>> a73ff0bf8553ee7ac33da93b749ae16959c43058
         </div>
         
     </div>
