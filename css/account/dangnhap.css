@@ -229,6 +229,11 @@ input[type=password]:focus {
     font-family: sans-serif;
 }
 
+.clearfix::before {
+    display: table;
+    content: "";
+}
+
 #login .action_bottom {
     padding: 0;
     display: inline-block;
@@ -246,6 +251,21 @@ input[type=password]:focus {
     overflow: hidden;
     z-index: 1;
     background-color: #000;
+}
+
+#login .action_bottom::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -2px;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    transform-origin: left center;
+    transform: scale(1, 1);
+    z-index: -1;
+    background-color: #000;
+    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 #login .action_bottom .btn {
@@ -283,6 +303,10 @@ input[type=password]:focus {
 
 .req_pass a:hover {
     text-decoration: none;
+}
+
+.clearfix::after {
+    clear: both;
 }
 
 .wrapper-heading-home-instagram {
@@ -428,6 +452,20 @@ input[type=password]:focus {
 
 .lang {
     font-family: sans-serif;
+}
+
+.item-footer>a::before {
+    content: "";
+    width: 7px;
+    height: 1px;
+    background: #000;
+    left: -18px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .swiper-container-noti {

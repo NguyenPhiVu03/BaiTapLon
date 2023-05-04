@@ -183,3 +183,17 @@ a:hover {
 .main-footer {
     z-index: -1;
 }
+
+.item-footer>a::before {
+    content: "";
+    width: 7px;
+    height: 1px;
+    background: #000;
+    left: -18px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.4s ease-in-out 0s;
+}
