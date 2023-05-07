@@ -10,20 +10,6 @@ body {
     height: auto;
 }
 
-#site-overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
 #header {
     width: 100%;
     height: 66px;
@@ -144,7 +130,7 @@ body {
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition-delay: 0s;
     transition-property: transform;
-    background-color: rgb(117, 112, 112);
+    background-color: rgb(236 236 236);
 }
 
 select {
@@ -205,6 +191,11 @@ select {
     transition: all 150ms linear;
 }
 
+.searchinput:focus {
+    background: #f2f5fa;
+    outline: none;
+}
+
 input[type=text] {
     line-height: 1.6em;
     text-transform: uppercase;
@@ -231,6 +222,24 @@ input[type=text] {
     transition-delay: 0s;
     transition-property: transform;
 } */
+
+.site-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.site-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7777;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms linear;
+}
 
 .site-close {
     position: relative;
@@ -279,6 +288,8 @@ input[type=text] {
 .site-close.is-active .bar {
     opacity: 0;
 }
+
+
 /* .req_pass {
     color: #959898;
     font-weight: 500;

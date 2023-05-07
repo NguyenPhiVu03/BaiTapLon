@@ -11,11 +11,6 @@
     <script src="/js/jquery-3.6.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <script>
-        function off() {
-            document.getElementById("site-site-overlay").style.display = "none";
-        }
-    </script>
 </head>
 
 <body>
@@ -50,7 +45,7 @@
                     <a href="../timkiem.html" class="search">TÌM KIẾM</a>
                     <span>
                         <span>
-                            <a href="#"><span>GIỎ HÀNG</span>
+                            <a href="/html/giohang.html"><span>GIỎ HÀNG</span>
                 <span style="float:left"></span>
                 <span class="count-holder"><span class="count">(0)</span></span>
                 </a>
@@ -66,7 +61,8 @@
             </div>
         </div>
     </div>
-    <div id="site-overlay" class="site-overlay active" onclick="off()"></div>
+
+    <div id="site-overlay" class="site-overlay active"></div>
     <div class="show-search">
         <select id="select-language">
             <option value="eg ">EN</option>
@@ -74,25 +70,17 @@
         </select>
         <div id="site-search ">
             <div class="site-nav-container ">
-                <p class="title lang ">Search</p>
+                <p class="title lang ">TÌM KIẾM</p>
                 <div class="search-box ">
                     <form action="../html/timkiem.html " class="searchform ">
                         <div class="search ">
-                            <input required=" " id="inputSearchAuto " name="q " maxlength="40 " autocomplete="off " class="searchinput " type="text " size="20 " placeholder="Search in HADES... ">
+                            <input required=" " id="inputSearchAuto " name="q " maxlength="40 " autocomplete="off " class="searchinput " type="text " size="20 " placeholder="TÌM KIẾM SẢN PHẨM... ">
                         </div>
                     </form>
                 </div>
                 <br>
-                <div class=" req_pass">
-                    <a href="/html/hades.html" class="return_back">
-                        <i class="fa fa-long-arrow-left"></i>
-                        <span class="lang" style="color: black;">Quay lại trang chủ</span>
-                    </a>
-                </div>
             </div>
-
         </div>
-
     </div>
 </body>
 
